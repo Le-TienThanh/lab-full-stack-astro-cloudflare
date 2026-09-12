@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 * {
   margin: 0;
   padding: 0;
@@ -21,4 +19,46 @@ html {
   --primary-color: #e6303d;
   --secondary-color: #eee;
   --tag-color: #7cc576;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.secondary-bg {
+  background-color: var(--secondary-color);
+  padding-block: 2.2rem;
 }

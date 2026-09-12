@@ -1,12 +1,12 @@
 ---
 ---
 
-<header class="flex justify-center">
-  <nav class="flex items-center justify-between h-[12vh] w-[80%]">
-    <a href="#" class="text-3xl font-bold">
-      Buzz<span class="text-(--primary-color)">Buy.</span>
+<header >
+  <nav class="navbar flex container">
+    <a href="#" class="logo">
+      Buzz<span >Buy.</span>
     </a>
-    <ul class="flex items-center gap-10">
+    <ul class="navlist flex">
       <li class="link link-active">
         <a href="#">HOME</a>
       </li>
@@ -22,23 +22,22 @@
       <li class="link">
         <a href="#">CONTACT</a>
       </li>
-      <li class="flex gap-4">
+      <li class="nav-icons flex">
         <a
           href="#"
-          class="text-sm text-(--light-black) hover:text-(--primary-color) leading-10 text-center w-10 rounded-full hover:bg-(--secondary-color)"
+          class="icon"
         >
           <i class="fa-solid fa-magnifying-glass"></i>
         </a>
         <a
           href="#"
-          class="text-sm text-(--light-black) hover:text-(--primary-color) leading-10 text-center w-10 rounded-full hover:bg-(--secondary-color)"
+          class="icon"
         >
           <i class="fa-solid fa-user"></i>
         </a>
         <a
           href="#"
-          class="text-sm text-(--light-black) hover:text-(--primary-color) leading-10
-          text-center w-10 rounded-full hover:bg-(--secondary-color) icon-active link-active"
+          class="icon icon-active"
         >
           <i class="fa-solid fa-shopping-bag"></i>
         </a>
@@ -51,13 +50,30 @@
 </header>
 
 <style>
-  .link {
+  header {
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    box-shadow: 0px 5px 14px 0.75px rgba(36, 11, 12, 0.5);
+
+  }
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--light-black);
+  }
+  .link a {
     font-size: 0.95rem;
     color: var(--light-black);
     font-weight: 500;
+    transition: 0.3s ease;
   }
-  .link-active,
-  .link:hover {
+  .link-active a ,
+  
+  .link:hover a {
     color: var(--primary-color);
   }
   .icon-active {
@@ -67,5 +83,39 @@
     font-size: 1.7rem;
     color: var(--primary-color);
     display: none;
+  }
+  .icon {
+    font-size: 0.9rem;
+    color: var(--light-black);
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+
+  }
+  .icon:hover,
+  .icon-active {
+     background-color: var(--secondary-color);
+  }
+  a{
+    transition: 0.3s ease;
+  }
+  a:hover{
+    color: var(--primary-color)
+  }
+  .link-active {
+    color: var(--primary-color);
+  }
+  .navbar{
+    height: 12vh;
+    justify-content: space-between;
+  }
+  .navlist {
+    gap: 2.5rem;
+  }
+  .nav-icons {
+    gap: 0.8rem;
   }
 </style>
