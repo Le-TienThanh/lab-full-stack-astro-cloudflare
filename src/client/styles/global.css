@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --light-black: #333;
+  --primary-color: #e6303d;
+  --secondary-color: #eee;
+  --tag-color: #7cc576;
+}
