@@ -62,3 +62,13 @@ a:hover {
   background-color: var(--secondary-color);
   padding-block: 2.2rem;
 }
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--light-black);
+}
+
+.section {
+  padding-top: 4rem;
+}

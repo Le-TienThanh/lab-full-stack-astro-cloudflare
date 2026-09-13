@@ -293,7 +293,7 @@
 
   <section class="section">
     <div class="secondary-bg">
-      <form class="flex container">
+      <form class="flex container wrap">
         <h3>Sign up for Send Newsletter</h3>
         <div class="input-container flex">
           <input
@@ -632,5 +632,30 @@
   .media:hover {
     color: var(--primary-color);
     transform: scale(2);
+  }
+  @media screen and (max-width: 700px) {
+    .hero {
+      height: 60vh;
+    }
+    .hero h3 {
+      font-size: 1.3rem;
+      line-height: 1.3rem;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      line-height: 4rem;
+    }
+    .hero h4 {
+      font-size: 1.1rem;
+      line-height: 2rem;
+    }
+    .category-container {
+      grid-template-columns: 1fr;
+    }
+    .category:nth-child(1),
+    .category:nth-child(2),
+    .category:nth-child(4) {
+      grid-row: auto;
+    }
   }
 </style>
